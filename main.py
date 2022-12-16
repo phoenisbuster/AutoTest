@@ -52,7 +52,6 @@ def test(webAddress, item, target, sheet_name, delay_time):
             input['Result'][inp] = "Passed"
         else:
             input['Result'][inp] = "Failed"
-            input['Expect'][inp] = input['Got'][inp]
         # time.sleep(5)
         driver.quit()
 
